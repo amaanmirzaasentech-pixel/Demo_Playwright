@@ -27,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run Playwright tests
-        run: npx playwright test tests/footer.spec.js
+        run: npx playwright test tests/footer.spec.js tests/sewdaily-makers-club.spec.js tests/search-functionality.spec.js
 
       - name: Upload Playwright report
         if: always()
